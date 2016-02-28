@@ -1,3 +1,7 @@
-from django.shortcuts import render
+# coding: utf-8
 
-# Create your views here.
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def single_photo(request):
+    return HttpResponse('3번 사진')

@@ -1,3 +1,5 @@
+# coding: utf-8
+
 """pystagram URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,4 +20,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^photo/$', 'photo.views.single_photo', name='view_single_photo'),
 ]
