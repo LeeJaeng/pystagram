@@ -1,3 +1,4 @@
+# coding: utf-8
 """
 Django settings for pystagram project.
 
@@ -121,5 +122,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# 장고는 이용자가 업로드한 파일을 MEDIA_URL과 MEDIA_ROOT라는 설정값을 참조하여 제공한다.
 MEDIA_URL = '/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static_files')
