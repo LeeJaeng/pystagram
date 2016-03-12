@@ -23,6 +23,8 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^photo/(?P<photo_id>\d+)$', 'photo.views.single_photo', name='view_single_photo'),
+    # kwargs의 용법
+    url(r'^hidden_photo/(?P<photo_id>\d+)$', 'photo.views.single_photo', name='view_hidden_single_photo', kwargs={'hidden':True}),
 ]
 
 # 업로드 된 파일은 static_files라는 URL을 따르므로 여기에도 추가를 시켜야 한다.
